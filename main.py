@@ -1,7 +1,7 @@
 import botpy, os
 from botpy.message import Message
-botpy.Client(bot_log=None)
 class MyClient(botpy.Client):
+    bot_log=None
     async def on_at_message_create(self, message: Message):
         
         await self.api.post_message(channel_id=message.channel_id, content='本地文件读写测试:测试通过！')
