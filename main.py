@@ -1,6 +1,6 @@
 import botpy, os
 from botpy.message import Message
-
+botpy.Client(bot_log=None)
 class MyClient(botpy.Client):
     async def on_at_message_create(self, message: Message):
         
