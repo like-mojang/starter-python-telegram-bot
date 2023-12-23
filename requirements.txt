@@ -28,3 +28,4 @@ uvloop==0.17.0
 watchfiles==0.19.0
 websockets==11.0.3
 qq-botpy==1.2.0
+flask==3.0.0
