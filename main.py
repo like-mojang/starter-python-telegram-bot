@@ -10,8 +10,8 @@ class MyClient(botpy.Client):
         此处为处理该事件的代码
         """
 
-
-intents = botpy.Intents(public_guild_messages=True,guild_messages=True, direct_message=True, guilds=True, audio_action=True, forums=True, message_audit=True, interaction=True, guild_members=True, guild_message_reactions=True)
-client = MyClient(intents=intents, bot_log=None)
-print(dir(MyClient))
-client.run(appid="102059538", secret="pY6XnqgIkz1pSs42")
+def app():
+    intents = botpy.Intents(public_guild_messages=True,guild_messages=True, direct_message=True, guilds=True, audio_action=True, forums=True, message_audit=True, interaction=True, guild_members=True, guild_message_reactions=True)
+    client = MyClient(intents=intents, bot_log=None)
+    # print(dir(MyClient))
+    client.run(appid="102059538", secret="pY6XnqgIkz1pSs42")
