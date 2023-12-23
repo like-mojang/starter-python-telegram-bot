@@ -1,7 +1,7 @@
 import botpy, os
 from botpy.message import Message
 import flask
-app=flask.Flask()
+app=flask.Flask(__name__)
 class MyClient(botpy.Client):
     async def on_at_message_create(self, message: Message):
         
