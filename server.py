@@ -1,6 +1,14 @@
 import uvicorn
-from main import app
+import threading
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8181)
+class a(threading.Thread):
+    def __init__(self):
+        super(a, self).__init__()
+    def run(self):
+        import main
+
+d=a()
+d.start()
+
+
 
